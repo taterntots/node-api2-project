@@ -5,5 +5,3 @@ server.listen(port, () => {
     //start watching for connections on the port specified
     console.log(`**Server running on port: ${port}**`)
 })
-
-module.exports = server;

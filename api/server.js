@@ -1,5 +1,5 @@
 const express = require('express'); //import the express package
-const postRouter = require('../routers/post-router'); //imports our router
+const postRoutes = require('../routers/post-router'); //imports our router
 const server = express(); //creates the server
 
 server.use(express.json()); //middleware needed to parse JSON
@@ -10,6 +10,6 @@ server.get('/', (req, res) => {
 })
 
 //routes
-server.use('/api/posts', postRouter)
+server.use('/api/posts', postRoutes)
 
 module.exports = server;
